@@ -11,3 +11,6 @@ From the root directory of Synology Toolkit :
 
 ## Nodejs package installation
 The builded package is located at (toolkit directory)/result_spk/nodejs-6.3.1/, manual install the .spk through DSM package center (after allowing untrusted packages from settings)
+
+## Limitations
+Tested on a Synology DS115j (armada370 CPU), the build script may need to be adapted depending on your NAS model.
