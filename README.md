@@ -4,5 +4,7 @@
 * The [source code of node.js](https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz) must be downloaded and extracted in the nodejs-synology directory
 
 ## Building
-From the root directory of Synology Toolkit
-`./pkgscripts-ng/PkgCreate.py -c --no-sign nodejs-synology`
+From the root directory of Synology Toolkit :
+```
+./pkgscripts-ng/PkgCreate.py -c --no-sign nodejs-synology
+```
