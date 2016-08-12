@@ -1,7 +1,7 @@
 # nodejs-synology
 ## Requirements before building
-* This package need to be build with the [Synology Toolkit](https://developer.synology.com/developer-guide/create_package/install_toolkit.html), just put nodejsPkg in (Toolkit directory)/source/nodejsPkg 
-* The source code of nodejs must be downloaded and extracted in the nodejsPkg directory
+* This package need to be build with the [Synology Toolkit](https://developer.synology.com/developer-guide/create_package/install_toolkit.html), package should be located at (toolkit directory)/source/nodejs-synology 
+* The [source code of node.js](https://nodejs.org/dist/v6.3.1/node-v6.3.1.tar.gz) must be downloaded and extracted in the nodejs-synology directory
 
 ## Building
 From the root directory of Synology Toolkit
