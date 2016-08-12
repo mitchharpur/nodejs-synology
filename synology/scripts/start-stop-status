@@ -1,0 +1,25 @@
+#!/bin/sh
+
+case $1 in
+    start)
+        exit 0
+    ;;
+    stop)
+        exit 0
+    ;;
+    status)
+        if [ -e ${APP_PATH} ]; then
+            exit 0
+        else
+            exit 1
+        fi
+    ;;
+    killall)
+        ;;
+    log)
+        exit 0
+    ;;
+esac
+
+exit 0
+

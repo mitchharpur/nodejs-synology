@@ -1,0 +1,13 @@
+#!/bin/sh
+
+unlink_executables() 
+{
+        local DIR="/usr/local/bin"
+
+        rm $DIR/node && \
+        rm $DIR/npm
+}
+
+unlink_executables
+
+exit 0

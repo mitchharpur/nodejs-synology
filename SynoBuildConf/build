@@ -1,0 +1,34 @@
+#!/bin/bash
+# Copyright (C) 2000-2016 Synology Inc. All rights reserved.
+
+# You can use CC CFALGS LD LDFLAGS CXX CXXFLAGS AR RANLIB READELF STRIP here
+
+case	${MakeClean}	in
+	[Yy][Ee][Ss])
+		make distclean
+		;;
+esac
+
+export  CC="${CC}"
+export  CXX="${CXX}"
+export  AR=${AR}
+export  CFLAGS="${CFLAGS}"
+export  CXXFLAGS="${CXXFLAGS}"
+export  LDFLAGS="${LDFLAGS}"
+
+echo "- - - - - - -"
+echo CC=${CC}
+echo "-"
+echo AR=${AR}
+echo "-"
+echo CFLAGS=${CFLAGS}
+echo "-"
+echo LDFLAGS=${LDFLAGS}
+echo "-"
+echo MAKE FLAGS=${MAKE_FLAGS}
+echo "- - - - - - -"
+echo ${STRIP}
+
+#make clean
+pkg-config --modversion icu-i18n && ./configure --without-snapshot --dest-cpu=arm --dest-os=linux --with-intl=system-icu --with-arm-fpu=vfpv3-d16
+make ${MAKE_FLAGS}

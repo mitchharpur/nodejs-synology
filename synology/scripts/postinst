@@ -1,0 +1,15 @@
+#!/bin/sh
+
+link_executables() 
+{
+	local SOURCE_DIR="$SYNOPKG_PKGDEST/usr/local/bin"
+	local DEST_DIR="/usr/local/bin"
+
+	ln -s $SOURCE_DIR/node $DEST_DIR/node && \
+	ln -s $SOURCE_DIR/npm $DEST_DIR/npm
+	echo "node $(node -v), npm $(npm -v)" > $SYNOPKG_TEMP_LOGFILE
+}
+
+link_executables
+
+exit 0
