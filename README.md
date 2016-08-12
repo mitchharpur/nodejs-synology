@@ -5,4 +5,4 @@
 
 ## Building
 From the root directory of Synology Toolkit
-`./pkgscripts-ng/PkgCreate.py -c --no-sign nodejsPkg`
+`./pkgscripts-ng/PkgCreate.py -c --no-sign nodejs-synology`
